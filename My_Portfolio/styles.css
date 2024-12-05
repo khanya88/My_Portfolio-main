@@ -1,0 +1,472 @@
+/* Apply a background image to the body */
+body {
+  background-image: url(https://mobilesolutions.pt/wp-content/uploads/2016/02/Silver-Blur-Background-Wallpaper.jpg);
+  background-position: Cover;
+  font-family: Arial, sans-serif;
+  color: #110101; /* Ensures text is visible on top of the background */
+  margin: 0;
+  padding: 0;
+font-size: 17px;
+}
+
+/* Header Section Styles */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a translucent black overlay */
+}
+
+/* Navbar container */
+.navbar-container {
+  display: flex;
+  justify-content:center;
+  text-align: right;
+  position: relative;
+  align-items: flex-end;
+  
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ccc;
+  
+}
+
+/* Navbar links styles */
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.nav-links li {
+  position: relative; 
+  text-align: right;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-size: 16px;
+  text-align: right;
+}
+
+.nav-links li:hover a {
+  background-color: #575757;
+}
+
+
+
+/* About Section Styles */
+#about {
+  text-align: center;
+  padding: 40px;
+  background-image: url(https://mobilesolutions.pt/wp-content/uploads/2016/02/Silver-Blur-Background-Wallpaper.jpg);
+  margin-top: 20px;
+}
+
+.image-container img {
+  border-radius: 50%; /* Makes the image circular */
+  border: 5px solid #fff; /* Adds a white border around the image */
+  margin: 20px 0; /* Adds space above and below the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+
+/* Add hover effect for the image */
+.image-container img:hover {
+  transform: scale(1.1); /* Slightly enlarges the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow around the image */
+}
+
+
+.buttons .btn {
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.buttons .btn:hover {
+  background-color: #575757;
+}
+
+/* Skills Section */
+.skills {
+  margin: 50px auto;
+  text-align: center;
+  background-image: url(https://mobilesolutions.pt/wp-content/uploads/2016/02/Silver-Blur-Background-Wallpaper.jpg);
+}
+
+.skills h2{
+text-align: center;
+}
+
+.skill-item {
+  margin: 15px 0;
+}
+
+.progress {
+  background-color: #220303;
+  border-radius: 5px;
+  height: 10px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.progress-in {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+}
+/* Gallery section styling */
+#gallery {
+padding: 90px;
+background-color: #f0f0f0;
+text-align: center;  /* Center content horizontally */
+}
+
+.slideshow-container {
+position: relative;
+max-width: 100%;
+margin: auto;  /* Center slideshow container */
+display: flex;  /* Use flexbox to center content inside */
+justify-content: center;  /* Center content horizontally */
+align-items: center;  /* Center content vertically */
+}
+
+.mySlides {
+display: none; /* Hide all images by default */
+position: relative;  /* Position images absolutely to overlap */
+}
+
+.mySlides img {
+width: 395px; /* Make images responsive */
+max-width: 600px; /* Set a maximum width for images */
+height: auto;  /* Maintain aspect ratio */
+border-radius: 10px;
+transition: transform 0.5s ease;
+object-fit: cover;  /* Ensure images cover the container without distortion */
+}
+
+/* Navigation dots */
+.dot {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+background-color: #717171;
+}
+
+/* Active dot */
+.active {
+background-color: #717171;
+}
+
+
+
+
+/* Projects Section */
+#projects {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Styling for the 'Projects' header */
+#projects h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase; /* Optional: capitalizes the text */
+  letter-spacing: 2px; /* Adds space between letters for a modern look */
+  text-align: center; /* Ensures the heading is centered */
+  grid-column: span 2;
+}
+
+/* Project Card Styling */
+.project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Project Title Styling */
+.project h3 {
+  font-size: 1.8rem;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+/* Project Description Styling */
+.project p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Link Styling */
+.project a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project a:hover {
+  color: #0056b3;
+}
+
+/* Hover effect for project cards */
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.certificates {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .certificates h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .certificates-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .certificate {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    max-width: 100%;
+  }
+  
+  .certificate-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .certificate-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .certificate-institution {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .certificate-date {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  
+
+/* Contact Section */
+#contact {
+ /* Basic styling for the contact section */
+#contact {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  width: 70%;
+ 
+}
+
+/* Styling for form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 70%;
+}
+
+input, textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #4CAF50;
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#confirmation-message {
+  margin-top: 20px;
+  background-color: #3e14e4;
+  border: 1px solid #4CAF50;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Footer Section */
+footer {
+    background: #fff;
+    color: #333;
+    padding: 40px 20px;
+    justify-content: center;
+    align-content: center;
+  }
+  footer-list{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .footer-section {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section {
+    list-style: none;
+  }
+  
+  .footer-section {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section {
+    margin-right: 10px;
+  }
+
+
+
+  .social-links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #fff;
+  }
+  
+  .social-links a:hover {
+    color: #ff6347;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .footer-bottom p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footer-bottom {
+      margin-top: 20px;
+    }
+  }
+  
+}
